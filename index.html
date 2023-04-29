@@ -7,6 +7,8 @@
     <title>Bikers Zone</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://kit.fontawesome.com/3992449fe7.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="container">
@@ -22,12 +24,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Blogs</a>
                         </li>
-                        
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">Showrooms</a>
                         </li>
@@ -38,18 +40,21 @@
                             <a class="nav-link" href="#">Top Sell Bikes</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Bikes In Stock
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Bikes In Stock
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Honda</a></li>
-                              <li><a class="dropdown-item" href="#">Suzuki</a></li>
-                              <li><a class="dropdown-item" href="#">Yamaha</a></li>
-                              <li><a class="dropdown-item" href="#">Hero</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Chinese Bikes</a></li>
+                                <li><a class="dropdown-item" href="#">Honda</a></li>
+                                <li><a class="dropdown-item" href="#">Suzuki</a></li>
+                                <li><a class="dropdown-item" href="#">Yamaha</a></li>
+                                <li><a class="dropdown-item" href="#">Hero</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Chinese Bikes</a></li>
                             </ul>
-                          </li>
+                        </li>
                     </ul>
 
                     <button class="btn btn-outline-success ms-3" type="submit">Search</button>
@@ -57,12 +62,185 @@
                 </div>
             </div>
         </nav>
+        <!-- Banner Slider -->
+        <div id="carouselExample" class="carousel slide bg-danger-subtle mt-3 p-5 rounded">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-12 col-md-6 d-flex justify-content-start align-items-center">
+                            <div>
+                                <h3>Ride-on R15 V4 with Smile</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Culpa, magnam!</p>
+                                <button class="btn btn-danger">Purchase</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="biker-zone-resources/images/bike-1.png" class="d-block w-100" alt="...">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-12 col-md-6 d-flex justify-content-start align-items-center">
+                            <div>
+                                <h3>Ride-on R15 V4 with Smile</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Culpa, magnam!</p>
+                                <button class="btn btn-danger">Purchase</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="biker-zone-resources/images/bike-2.png" class="d-block w-100" alt="...">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-12 col-md-6 d-flex justify-content-start align-items-center">
+                            <div>
+                                <h3>Ride-on R15 V4 with Smile</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Culpa, magnam!</p>
+                                <button class="btn btn-danger">Purchase</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img src="biker-zone-resources/images/bike-3.png" class="d-block w-100" alt="...">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bz-light-red" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon bz-light-red" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </header>
     <!-- ------------ -->
     <!-- Main Section -->
     <!-- ------------ -->
-    <main>
-
+    <main >
+        <!-- Hot Bikes Section -->
+        <section class="text-center mt-5">
+            <h1>Hot Bikes Of the Year</h1>
+            <p class="text-danger">Grab yours hot one quickly</p>
+            <hr class="border-danger w-50 mx-auto">
+            <div class="row g-5 mt-4 px-5 row-cols-1 row-cols-md-3">
+                <div class="col">
+                    <img class="w-100" src="biker-zone-resources/images/feature-bike.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img class="w-75" src="biker-zone-resources/images/feature-bike.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img class="w-100" src="biker-zone-resources/images/feature-bike.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- New Arrival Section -->
+        <section class="bg-info bg-opacity-25 py-4 mt-4 rounded">
+            <h1 class="text-center mt-4">New Arrival</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4 p-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="biker-zone-resources/images/bike-4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                      <button class="btn btn-danger ">Purchase</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="biker-zone-resources/images/bike-7.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-danger ">Purchase</button>
+                      </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="biker-zone-resources/images/bike-6.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-danger ">Purchase</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- Happy Clients Section -->
+        <section class="my-4">
+            <h2 class="text-center py-4">Happy <span class="text-danger">Clients</span></h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100 text-center">
+                    <img src="biker-zone-resources/images/user-1.png" class="card-img-top w-25 mx-auto mt-4" alt="...">
+                    <div class="card-body mt-3">
+                      <h5 class="card-title text-primary">Ashrar Akil</h5>
+                      <p>Student, <br>Chattogram</p>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="text-warning">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center">
+                    <img src="biker-zone-resources/images/user-2.png" class="card-img-top w-25 mx-auto mt-4" alt="...">
+                    <div class="card-body mt-3">
+                      <h5 class="card-title text-primary">Fatema Nasrin</h5>
+                      <p>Full Stack Developer, <br>Dhaka</p>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="text-warning">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 text-center">
+                    <img src="biker-zone-resources/images/user-3.png" class="card-img-top w-25 mx-auto mt-4" alt="...">
+                    <div class="card-body mt-3">
+                      <h5 class="card-title text-primary">Nasrin Sultana</h5>
+                      <p>Web Designer, <br>Dhaka</p>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                      <p class="text-warning">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+               
+        </section>
     </main>
     <!-- ------------ -->
     <!-- ---Footer--- -->
